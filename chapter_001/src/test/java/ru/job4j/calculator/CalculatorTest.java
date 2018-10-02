@@ -33,7 +33,8 @@ public class CalculatorTest {
 		assertThat(result, is(result));
 	}
 	
-	@Testpublic void whenMultipleTwoOnOneThenTwo {
+	@Test
+	public void whenMultipleTwoOnOneThenTwo {
 		Calculator calc = new Calculator();
 		calc.div(2D, 1D);
 		double result = calc.getResult();
