@@ -1,4 +1,4 @@
 package ru.job4j.calculate;
 
-public class Converter {
+public class ConverterTest {
 }
