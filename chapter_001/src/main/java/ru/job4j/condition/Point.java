@@ -25,10 +25,9 @@ public class Point { // создаем класс Point
             int y1 = a.y;
             int x2 = b.x;
             int y2 = b.y;
-            double result = Math.sqrt(
+            return Math.sqrt(
                     Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)
             );
-            return result;
         }
 
         public static void main(String[] args) {    // введем метод main
