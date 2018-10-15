@@ -13,25 +13,38 @@ public class Point { // создаем класс Point
     public Point(int x, int y) {    // создаем конструктор
         this.x = x; // для записи в поля используем операторы this.x
         this.y = y; // и this.y
-
+    }
         public double distanceTo(Point that) {
             // Точка а - это текущая, начальная точка. К ней мы обращаемся через оператор this.
             Point a = this;
             // Точка b - это входящая точка. К ней можно обратиться через переменную that.
-            // или для удобства мы создали новую переменную b и к ней присdоили переменную that
+            // или для удобства мы создали новую переменную b и к ней присвоили переменную that
             Point b = that;
-            // сделаем вывод на консоль.
-            System.out.println("x1 = " + a.x);
-            System.out.println("y1 = " + a.y);
-            System.out.println("x2 = " + b.x);
-            System.out.println("y2 = " + b.y);
-            return -1;
+
+            int x1 = a.x;
+            int y1 = a.y;
+            int x2 = b.x;
+            int y2 = b.y;
+            double result = Math.sqrt(
+                    Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)
+            );
+            return result;
         }
 
         public static void main(String[] args) {    // введем метод main
-            Point a = new Point(0, 1);  // создаем два объекта типа Point
-            Point b = new Point(2, 5);  // и заполняем их значениями x1=0; y1=1
-            a.distanceTo(b);                                //x2=2; y2=5
+            // создаем два объекта типа Point
+            // и заполняем их значениями x1=0; y1=1
+            //x2=2; y2=5
+            Point a = new Point(0, 1);
+            Point b = new Point(2, 5);
+
+            System.out.println("x1 = "+ a.x);
+            System.out.println("y1 = "+ a.y);
+            System.out.println("y1 = "+ b.x);
+            System.out.println("y2 = "+ b.y);
+
+            double result = a.distanceTo(b);
+            System.out.println("Расстояние между точками А и Б: " + result);
+
         }
     }
-}
