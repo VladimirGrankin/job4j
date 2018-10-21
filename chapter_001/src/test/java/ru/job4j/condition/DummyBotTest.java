@@ -34,7 +34,7 @@ public class DummyBotTest {
         DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Сложи 2 + 2"),
-                is("Это ставит меня в тупик! Спросите что нибудь еще.")
+                is("Это ставит меня в тупик! Спросите другой вопрос.")
         );
     }
 }
