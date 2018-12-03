@@ -40,9 +40,9 @@ public class Triangle {
         double ab = this.a.distanceTo(this.b);
         double ac = this.a.distanceTo(this.b);
         double bc = this.b.distanceTo(this.c);
-        double p = this.halfPerimetr(ab, ac,bc);
-        if (this.exist(ab,ac, bc)) {
-            rsl = Math.sqrt(p*(p - ab)*(p - ac)*(p - bc));
+        double p = this.halfPerimetr(ab, ac, bc);
+        if (this.exist(ab, ac, bc)) {
+            rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
     }

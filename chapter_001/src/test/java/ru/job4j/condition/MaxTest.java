@@ -29,4 +29,22 @@ public class MaxTest {
         int result = maximum.max(1, 1);
         assertThat(result, is(1));
     }
-}
+    @Test
+    public void whenFirstLessThird() {
+        Max maximum = new Max();
+        int result = maximum.max(1, 2, 3);
+        assertThat(result, is(3));
+    }
+    @Test
+    public void whenFirstMoreThird() {
+        Max maximum = new Max();
+        int result = maximum.max(3, 2, 2);
+        assertThat(result, is(3));
+    }
+    @Test
+    public void whenTwoMoreThird() {
+        Max maximum = new Max();
+        int result = maximum.max(1, 3, 2);
+        assertThat(result, is(3));
+    }
+  }
