@@ -28,3 +28,4 @@ target/
 # IntelliJ IDEA tmp
 .idea
 *.iml
+/chapter_001/nbproject/
