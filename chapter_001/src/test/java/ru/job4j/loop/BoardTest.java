@@ -27,6 +27,7 @@ public class BoardTest {
     /**
      * Метод проверяет доску размером 5 х 4
      */
+    @Test
     public void when5x4() {
         Board board = new Board();
         String rsl = board.paint(5, 4);
