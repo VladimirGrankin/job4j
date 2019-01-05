@@ -11,6 +11,9 @@ import static org.junit.Assert.assertThat;
  * @since 0.1
  */
 public class BoardTest {
+    /**
+     * Метод проверяет доску размером 3 х 3
+     */
     @Test
     public void when3x3() {
         Board board = new Board();
@@ -18,6 +21,18 @@ public class BoardTest {
         String ln = System.lineSeparator();
         assertThat(rsl, is(
                 String.format("X X%s X %sX X%s", ln, ln, ln)
+                )
+        );
+    }
+    /**
+     * Метод проверяет доску размером 5 х 4
+     */
+    public void when5x4() {
+        Board board = new Board();
+        String rsl = board.paint(5, 4);
+        String ln = System.lineSeparator();
+        assertThat(rsl, is(
+                String.format("X X X%s X X %sX X X%s X X %s", ln, ln, ln, ln)
                 )
         );
     }
