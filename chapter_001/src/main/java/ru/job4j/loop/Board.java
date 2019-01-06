@@ -11,15 +11,15 @@ public class Board {
     /**
      * Метод рисует шахматную доску из символов Х и пробелов
      * @param width - ширина доски
-     * @param higth - длина доски
+     * @param height - длина доски
      * @return - шахматную доску в псевдографике (строка символов Х и пробел)
      */
-    public String paint(int width, int higth) {
+    public String paint(int width, int height) {
         StringBuilder screen = new StringBuilder();
         String ln = System.lineSeparator();
-        for (int higthChess = 0; higthChess < higth; higthChess++) {
+        for (int heightChess = 0; heightChess < height; heightChess++) {
             for (int widthChess = 0; widthChess < width; widthChess++) {
-                if ((widthChess + higthChess) % 2 == 0) {
+                if ((widthChess + heightChess) % 2 == 0) {
                     screen.append('X');
                 } else {
                     screen.append(' ');
