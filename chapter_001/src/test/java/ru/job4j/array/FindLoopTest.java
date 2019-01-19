@@ -19,7 +19,7 @@ public class FindLoopTest {
         assertThat(result, is(expect));
     }
     /**
-     * Тестирует поиск в массиве из пяти элементов элемента с максимальным индексом (4)
+     * Тестирует поиск в массиве элемента с максимальным индексом (4)
      */
     @Test
     public void whenArrayHasLengh5Then4() {
