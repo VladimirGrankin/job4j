@@ -15,7 +15,6 @@ public class CheckTest {
         boolean result = check.mono(input);
         assertThat(result, is(true));
     }
-
     /**
      * Проверка, когда в массиве есть отличный от остальных элемент
      */
