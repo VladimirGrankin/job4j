@@ -8,17 +8,17 @@ package ru.job4j.array;
  */
 public class Check {
     /**
-     * Метод перебирает каждый элемент массива и проверяет, чтобы он был одинаково true либо false
+     * Метод перебирает каждый элемент массива и сравнивает со следующим элементом массива
      * @param data - булевый масссив
      * @return - true если все элементы одинаковые, иначе false
      */
     public boolean mono(boolean[] data) {
         boolean result = false;
-            for (int i = 0; i <= data.length; i++) {
-                if (data[i]) {
+            for (int i = 0; i != (data.length - 1); i++) {
+                if (data[i] == data[i + 1]) {
                     result = true;
-                } else if (!data[i]) {
-                    result = true;
+                } else if (data[i] != data[i + 1]) {
+                    result = false;
                 }
             }
             return result;
