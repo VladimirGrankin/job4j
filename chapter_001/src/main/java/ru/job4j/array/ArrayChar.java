@@ -15,7 +15,6 @@ public class ArrayChar {
     public ArrayChar(String line) {
         this.data = line.toCharArray();
     }
-
     /**
      * Метод, в котором сравниваются элементы из массива data с префиском (элементами массива value)
      * в цикле перебираем элементы до размера наименьшего массива, т.е. с которым сравниваем - value

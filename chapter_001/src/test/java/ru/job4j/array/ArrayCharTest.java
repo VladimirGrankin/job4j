@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 
 public class ArrayCharTest {
     /**
-     * Проверка, если слово начинается с заданнного префикса
+     * Проверка условий, если слово начинается с заданнного префикса
      */
     @Test
     public void whenStartWithPrefixThenTrue() {
@@ -14,10 +14,10 @@ public class ArrayCharTest {
         boolean result = word.startWith("He");
         assertThat(result, is(true));
     }
-    @Test
     /**
-     * Проверка, если слово не начинается с заданного префикса
+     * Проверка условий, если слово не начинается с заданного префикса
      */
+    @Test
     public void whenNotStartPrefixThenFalse() {
         ArrayChar word = new ArrayChar("Hello");
         boolean result = word.startWith(("Hi"));
