@@ -10,7 +10,7 @@ public class ArrayChar {
 
     /**
      * Массив, начальные элементы которого будем сравнивать
-     * @param line
+     * @param line - массив который сравниваем преобразуем в строку
      */
     public ArrayChar(String line) {
         this.data = line.toCharArray();
@@ -26,10 +26,8 @@ public class ArrayChar {
         boolean result = true;
         char[] value = prefix.toCharArray();
         for (int i = 0; i != value.length; i++) {
-            if (data[i] == value[i]) {
-                result = true;
-            } else {
-                result = false;
+            if (data[i] != value[i]) {
+               result = false;
             }
         }
         return result;
