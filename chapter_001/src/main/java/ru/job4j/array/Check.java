@@ -9,7 +9,7 @@ package ru.job4j.array;
 public class Check {
     /**
      * Метод перебирает каждый элемент массива и сравнивает со следующим элементом массива
-     * @param data - булевый масссив
+     * @param data - булевый массив
      * @return - true если все элементы одинаковые, иначе false
      */
     public boolean mono(boolean[] data) {
