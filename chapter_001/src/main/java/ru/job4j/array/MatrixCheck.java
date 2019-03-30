@@ -15,16 +15,12 @@ public class MatrixCheck {
      */
     public boolean mono(boolean[][] data) {
         boolean result = true;
-        // 1. нам нужно пройтись циклом по диагонали от data[0][0] до data[iMax][jMax] слева_сверху до право_внизу
-        // 2. потом проверить обратную диагональ право_сверху до слева_внизу
-        // т.к. массив квадратный, то у нас только один индекс ячейки - i (верней i=j)
-        // в одном цикле совместить сразу две проверки - в одном for два if
-        int size = data.length;
-        for (int i = 0; i < size - 1; i++) {
-            if (data[i][i] != data[i + 1][i + 1]) {
+        for (int i = 0; i < data.length - 1; i++) {
+            if (data[0][0] != data[i + 1][i + 1]) {
                 result = false;
                 break;
-            } else if (data[size - (i + 1)][size - (i + 1)] != data[size - (i + 2)][size - (i + 2)]) {
+                }
+            if (data[0][data.length - 1] != data[i + 1][data.length - (i + 2)]) {
                 result = false;
                 break;
             }

@@ -30,7 +30,7 @@ public class MatrixCheckTest {
         boolean[][] input = new boolean[][] {
                 {true, true, true},
                 {false, false, true},
-                {true, false, true}
+                {false, false, true}
         };
         boolean result = check.mono(input);
         assertThat(result, is(false));
